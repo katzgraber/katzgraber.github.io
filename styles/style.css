@@ -1,0 +1,222 @@
+
+/* main */
+body {
+	text-align:center; 
+	margin:0; 
+	padding:0; 
+	background:#232C2D; 
+	color:#000000; 
+	font-family: "Trebuchet MS", verdana, arial, sans-serif;
+	font-size:90%; 
+}
+
+p {
+	margin:0; 
+	padding: 10px 0 10px 0; 
+	line-height:140%; 
+}
+
+h1 {
+	margin:0; 
+	padding:0 0 5px 0; 
+	font-weight:normal; 
+	font-size:150%; 
+	border-bottom: 2px solid #480000;
+}
+
+a {
+	color:#000000; 
+	text-decoration:underline; 
+}
+a:hover	{
+	text-decoration:none; 
+}
+
+img.rframed
+{
+    border-style: solid;
+    border-width: 1px;
+    float: right;
+    display: inline;
+    padding: 5px;
+    margin: 10px;
+}
+
+img.lframed
+{
+    border-style: solid;
+    border-width: 1px;
+    float: left;
+    display: inline;
+    padding: 5px;
+    margin: 10px;
+}
+
+/* structural */
+#all {
+	margin:80px auto 10px auto; 
+	padding:1px; 
+	width:780px; 
+	background:#FFFFFF; 
+	text-align:left; 
+}
+
+#content {
+	float:left; 
+	padding:20px 20px 5px 20px; 
+	width:750px; 
+}
+
+#rightColumn	{
+	float:right; 
+	padding:20px 20px 5px 20px; 
+	width:200px; 
+	margin:-190px 20px 0 0; 
+	background:#232C2D; 
+	border:1px solid #FFFFFF; 
+	color:#FFFFFF; 
+}
+
+/* footer */
+#footer	{
+	clear:both; 
+	padding:5px 20px 0px 20px; 
+	font-size:80%; 
+	background:#232C2D; 
+	color:#FFFFFF; 
+}
+
+#footer span {
+	float:right; 
+}
+
+#footer a {
+	color:#FFFFFF; 
+}
+
+/* custom headers */
+h1.frontimage2 {
+	background:url('https://katzgraber.org/pics/bg2.jpg'); 
+        background-repeat: no-repeat;
+        background-position: 50% 30%;
+        background-size: 800px;
+	color:#FFFFFF; 
+	margin:0; 
+	padding:20px 0 160px 20px; 
+	font-size:200%; 
+	font-weight:normal; display:block; 
+        border-bottom: 0px solid #480000;
+}
+
+h1.frontimage4 {
+        background:url('https://katzgraber.org/pics/bg4.jpg');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: 800px;
+        color:#FFFFFF;
+        margin:0;
+        padding:20px 0 160px 20px;
+        font-size:200%;
+        font-weight:normal; display:block;
+        border-bottom: 0px solid #480000;
+}
+
+h1.frontimage1 {
+        background:url('https://katzgraber.org/pics/bg1.jpg');
+        background-repeat: no-repeat;
+        background-position: 50% 40%;
+        background-size: 800px;
+        color:#FFFFFF;
+        margin:0;
+        padding:20px 0 160px 20px;
+        font-size:200%;
+        font-weight:normal; display:block;
+        border-bottom: 0px solid #480000;
+}
+
+h1.frontimage6 {
+        background:url('https://katzgraber.org/pics/bg6.jpg');
+        background-repeat: no-repeat;
+        background-position: 50% 25%;
+        background-size: 800px;
+        color:#FFFFFF;
+        margin:0;
+        padding:20px 0 160px 20px;
+        font-size:200%;
+        font-weight:normal; display:block;
+        border-bottom: 0px solid #480000;
+}
+
+h1.frontimage5 {
+        background:url('https://katzgraber.org/pics/bg5.jpg');
+        background-repeat: no-repeat;
+        background-position: 50% 25%;
+        background-size: 800px;
+        color:#FFFFFF;
+        margin:0;
+        padding:20px 0 160px 20px;
+        font-size:200%;
+        font-weight:normal; display:block;
+        border-bottom: 0px solid #480000;
+}
+
+h1.frontimage9 {
+        background:url('https://katzgraber.org/pics/bg9.jpg');
+        background-repeat: no-repeat;
+        background-position: 50% 25%;
+        background-size: 800px;
+        color:#FFFFFF;
+        margin:0;
+        padding:20px 0 160px 20px;
+        font-size:200%;
+        font-weight:normal; display:block;
+        border-bottom: 0px solid #480000;
+}
+
+h1.frontimage4 {
+        background:url('https://katzgraber.org/pics/bg4.jpg');
+        background-repeat: no-repeat;
+        background-position: 50% 25%;
+        background-size: 800px;
+        color:#FFFFFF;
+        margin:0;
+        padding:20px 0 160px 20px;
+        font-size:200%;
+        font-weight:normal; display:block;
+        border-bottom: 0px solid #480000;
+}
+
+/* navigation */
+ul#nav	{
+	margin:0 0 1px 0; 
+	padding:10px 0; 
+	background:#232C2D; 
+}
+
+#nav li	{
+	margin:0; 
+	padding:0; 
+	list-style:none; 
+	display:inline; 
+}
+
+#nav a	{
+	color:#FFFFFF; 
+	text-decoration:none; 
+	padding:10px 15px; 
+	text-transform:uppercase; 
+	background:#232C2D; 
+	font-size: 80%;
+}
+
+#nav a:hover {
+	color:#999999; 
+}
+
+/**CLEARFIX - ICE**/
+.clearfix:after 	{content:"."; display:block; height:0; clear:both; visibility:hidden; }
+.clearfix 			{display:inline-block; }
+/* Hides from IE-mac \*/
+* html .clearfix 	{height:1%; }
+.clearfix 			{display:block; }
+/* End hide from IE-mac */

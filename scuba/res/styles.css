@@ -1,0 +1,46 @@
+/*
+ * Combined style sheet for the index pages and the slide pages, with only classes that are different for this style
+ */
+
+body {
+	color: #dddddd;
+	background-color: #111111;
+	scrollbar-color: dark;
+}
+body::-webkit-scrollbar {
+	width: .8rem;
+}
+body::-webkit-scrollbar-track {
+	background-color: rgba(0,0,0,.25);
+}
+body::-webkit-scrollbar-thumb {
+	border: 1px solid rgba(0,0,0,.5);
+	background-color: rgba(255,255,255,.15);
+}
+a {
+	color: #ffffff;
+}
+a:hover {
+	color: red;
+}
+#thumbnails > div {
+	border: 0px solid #dddddd;
+}
+
+.non-responsive #slideimage {
+	border: 0px solid #dddddd;
+}
+#thumbnav img {
+	border: 0px solid #dddddd;
+}
+#thumbcurrent::after {
+	border-bottom-color: #dddddd;
+}
+#slide-page.responsive > header,
+#slide-page.responsive > footer {
+	background-color: rgba(0,0,0,.5);
+}
+#slide-page.responsive > header:hover,
+#slide-page.responsive > footer:hover {
+	background-color: rgba(0,0,0,.85);
+}
