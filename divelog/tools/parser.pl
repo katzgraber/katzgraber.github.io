@@ -3,7 +3,7 @@
 # initialize some variables #################################################
 
 #$path="/Users/hekatzgr/Desktop/divelog";
-$path="/Users/hgk/Sites/katzgraber.org/divelog";
+$path="/Users/hgk/Library/Mobile Documents/com~apple~CloudDocs/Me/katzgraber.org/divelog";
 $sites="sites/";
 $file="log.dat";
 $verbose=0;
@@ -400,11 +400,11 @@ for($i = 0; $i < $counter; $i++){
     </a>
     </td>
 
-    <td align=right>
-    <a href=\"$link[$i]\">
-    $photo
-    </a>
-    </td>
+#    <td align=right>
+#    <a href=\"$link[$i]\">
+#    $photo
+#    </a>
+#    </td>
 </tr>
 
 <tr bgcolor=#ffffff>
