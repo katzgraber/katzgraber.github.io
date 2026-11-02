@@ -404,3 +404,113 @@ center { display: block; text-align: left; }
 /**CLEARFIX**/
 .clearfix::after { content: ""; display: block; clear: both; }
 .clearfix { display: block; }
+
+/* --------------------------------------------------------------------------
+   Research map (research page): method -> application flow
+   -------------------------------------------------------------------------- */
+#research-flow {
+	--c-S: #2f7f8f;
+	--c-M: #5b6bb5;
+	--c-Q: #c24d4d;
+	--c-app: #46565e;
+	--faint: #7d878a;
+	margin: 0 0 1rem;
+}
+#research-flow .rf-lede {
+	color: var(--ink-muted);
+	font-size: 0.95rem;
+	max-width: 72ch;
+}
+#research-flow .rf-lede a { color: inherit; }
+#rf-chart { width: 100%; margin: 1.5rem 0 0.25rem; }
+#rf-chart svg { display: block; width: 100%; height: auto; overflow: visible; font-family: var(--font-body); }
+#rf-chart .rf-axis { font: 500 12px var(--font-body); letter-spacing: .08em; fill: var(--faint); }
+#rf-chart .rf-link { fill: none; stroke-opacity: .34; cursor: pointer; transition: stroke-opacity .2s; }
+#rf-chart .rf-link:hover, #rf-chart .rf-link.on { stroke-opacity: .72; }
+#rf-chart .rf-dim .rf-link:not(.on) { stroke-opacity: .1; }
+#rf-chart .rf-node rect { cursor: pointer; }
+#rf-chart .rf-node a { cursor: pointer; outline: none; }
+#rf-chart .rf-name {
+	font-family: var(--font-body);
+	font-weight: 700;
+	fill: var(--ink);
+	text-decoration: underline;
+	text-decoration-color: rgba(27,35,36,.25);
+	text-underline-offset: 3px;
+}
+#rf-chart .rf-cnt { font: 400 12.5px var(--font-body); fill: var(--ink-muted); }
+#rf-chart .rf-node a:hover .rf-name,
+#rf-chart .rf-node a:focus-visible .rf-name,
+#rf-chart .rf-node.on .rf-name { text-decoration-color: currentColor; }
+#rf-chart .rf-node a:focus-visible rect.rf-hit { stroke: var(--ink); stroke-width: 1.5; }
+#rf-chart .rf-hit { fill: transparent; }
+
+#research-flow .rf-hint,
+#research-flow .rf-note {
+	color: var(--faint);
+	font-size: 0.8125rem;
+	max-width: none;
+}
+#research-flow .rf-hint { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.75rem; }
+
+#research-flow .rf-btn {
+	font: 500 0.8125rem var(--font-body);
+	border: 1px solid var(--line);
+	background: transparent;
+	border-radius: 999px;
+	padding: 0.3rem 0.85rem;
+	cursor: pointer;
+	color: var(--ink-muted);
+	transition: color .15s ease, border-color .15s ease, background-color .15s ease;
+}
+#research-flow .rf-btn:hover { color: var(--ink); border-color: var(--ink-muted); background: var(--paper-2); }
+#research-flow .rf-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+#rf-panel {
+	margin: 1rem 0 0.5rem;
+	background: #fff;
+	border: 1px solid var(--line);
+	border-radius: 14px;
+	padding: clamp(1rem, 2.5vw, 1.75rem);
+	scroll-margin-top: 5rem;
+}
+#rf-panel[hidden] { display: none; }
+#rf-panel .rf-panel-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
+#rf-panel h2 {
+	font: 700 1.2rem/1.25 var(--font-body);
+	letter-spacing: -0.01em;
+	margin: 0 0 0.25rem;
+}
+#rf-panel .rf-swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 8px; vertical-align: 0.05em; }
+#rf-panel .rf-meta {
+	color: var(--ink-muted);
+	font-size: 0.875rem;
+	margin: 0 0 0.75rem;
+	padding: 0;
+	display: flex;
+	gap: 0.75rem;
+	flex-wrap: wrap;
+	align-items: center;
+	max-width: none;
+}
+#rf-panel ol { list-style: none; margin: 0; padding: 0; columns: 2 380px; column-gap: 2.5rem; }
+#rf-panel li { break-inside: avoid; padding: 0.55rem 0; border-top: 1px solid var(--line); }
+#rf-panel li a {
+	color: var(--ink);
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 0.925rem;
+	line-height: 1.35;
+}
+#rf-panel li a:hover { text-decoration: underline; text-decoration-color: var(--accent); color: var(--accent-ink); }
+#rf-panel .rf-sub {
+	display: block;
+	color: var(--faint);
+	font-size: 0.78rem;
+	margin-top: 2px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#rf-chart a { text-decoration: none; }
+#rf-chart .rf-cnt { text-decoration: none; }
