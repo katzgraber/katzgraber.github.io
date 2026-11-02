@@ -1,3 +1,4 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500&display=swap');
 /*
  * Combined style sheet for the index pages and the slide pages, with only classes that are different for this style
  */
@@ -43,4 +44,43 @@ a:hover {
 #slide-page.responsive > header:hover,
 #slide-page.responsive > footer:hover {
 	background-color: rgba(0,0,0,.85);
+}
+
+/* ---- katzgraber.org refresh ---- */
+body {
+	font-family: 'Satoshi', 'Helvetica Neue', Arial, sans-serif;
+	background:
+		radial-gradient(1200px 600px at 50% -10%, #2b3a3c 0%, transparent 70%),
+		#161d1e;
+	background-attachment: fixed;
+	color: #f3f1ec;
+}
+a:hover { color: #f2c2ac; }
+#index-page > header { padding: 1rem 0 0.5rem; }
+#nav > .btn {
+	display: inline-flex;
+	border-radius: 999px;
+	transition: background-color .15s ease;
+}
+#nav > .btn:hover { background: rgba(255,255,255,.1); }
+#index-page #thumbnails {
+	max-width: 1120px;
+	gap: 8px;
+	padding: 0.5rem 1rem 3rem;
+}
+#index-page #thumbnails > div { margin: 0; }
+#index-page #thumbnails > div > a {
+	border-radius: 10px;
+	box-shadow: 0 10px 24px -14px rgba(0,0,0,.9);
+}
+#index-page #thumbnails > div img {
+	transition: transform .5s cubic-bezier(.2,.7,.2,1), filter .3s ease;
+}
+#index-page #thumbnails > div > a:hover img { transform: scale(1.07); }
+#index-page #thumbnails > div > a:focus-visible { outline: 2px solid #c2532e; outline-offset: 2px; }
+@media (max-width: 480px) {
+	#index-page #thumbnails { gap: 4px; padding: 0.25rem 0.25rem 2rem; }
+	#index-page #thumbnails > div:not(.folder) { width: calc(33.333% - 3px); min-height: 0; }
+	#index-page #thumbnails > div:not(.folder) > a { height: auto; aspect-ratio: 1 / 1; }
+	#index-page #thumbnails > div img { width: 100%; height: 100%; object-fit: cover; }
 }
